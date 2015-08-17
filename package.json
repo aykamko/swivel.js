@@ -1,0 +1,26 @@
+{
+  "name": "swivel.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aykamko/swivel.js"
+  },
+  "author": "Aleks Kamko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aykamko/swivel.js/issues"
+  },
+  "homepage": "https://github.com/aykamko/swivel.js",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-es6-module-transpiler": "^0.6.0",
+    "jshint": "^2.8.0",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
