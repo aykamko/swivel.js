@@ -1,6 +1,6 @@
 var configureGrunt = function(grunt) {
   var npmTasks = [
-    'grunt-es6-module-transpiler',
+    'grunt-babel',
     'grunt-contrib-watch',
   ];
   for (var i = 0; i < npmTasks.length; i++) {
@@ -11,12 +11,14 @@ var configureGrunt = function(grunt) {
     watch: {
       scripts: {
         files: 'src/swivel.js',
-        tasks: 'transpile',
+        tasks: 'babel',
       },
     },
-    transpile: {
-      main: {
-        type: 'globals',
+    babel: {
+      options: {
+        sourceMap: 'both',
+      },
+      dist: {
         files: {
           'dist/swivel.js': 'src/swivel.js',
         },
@@ -24,7 +26,7 @@ var configureGrunt = function(grunt) {
     },
   });
 
-  grunt.registerTask('default', ['transpile'])
+  grunt.registerTask('default', ['babel'])
 }
 
 module.exports = configureGrunt;
