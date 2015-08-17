@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<script type="text/javascript" src="../dist/swivel.js"></script>
-</head>
-<body>
-	<div id="swivel"></div>
-	<script type="text/javascript" src="test.js"></script>
-</body>
-</html>
+---
+layout: default
+---
+<div id="swivel"></div>
+<script>
+  var swiv = new Swivel([
+    "http://color.smyck.org/images/diff.png",
+    "http://color.smyck.org/images/erlang.png",
+    "http://color.smyck.org/images/ruby.png"
+  ]).run();
+</script>
